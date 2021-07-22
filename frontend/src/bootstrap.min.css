@@ -4004,7 +4004,7 @@ fieldset:disabled .btn {
 	justify-content: space-between;
 }
 .navbar-brand {
-	padding-top: 0.29375rem;
+	padding-top: 1rem;
 	padding-bottom: 0.29375rem;
 	margin-right: 1rem;
 	font-size: calc(1.2625rem + 0.15vw);

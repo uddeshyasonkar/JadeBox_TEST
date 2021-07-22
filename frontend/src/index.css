@@ -1,58 +1,208 @@
-@import url('http://fonts.cdnfonts.com/css/monument-extended');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Oswald&family=Raleway&family=Roboto&family=Source+Sans+Pro&display=swap');
-:root {
-	--bs-blue: #4582ec;
-	--bs-indigo: #6610f2;
-	--bs-purple: #6f42c1;
-	--bs-pink: #e83e8c;
-	--bs-red: #d9534f;
-	--bs-orange: #fd7e14;
-	--bs-yellow: #f0ad4e;
-	--bs-green: #02b875;
-	--bs-teal: #20c997;
-	--bs-cyan: #17a2b8;
-	--bs-white: #fff;
-	--bs-gray: #868e96;
-	--bs-gray-dark: #343a40;
-	--bs-primary: #3c5333;
-	--bs-primary-light: #3c533380;
-	--bs-background: #e5e5e5;
-	--bs-text: #30362e;
-	--bs-secondary: #adb5bd;
-	--bs-success: #02b875;
-	--bs-info: #17a2b8;
-	--bs-warning: #f0ad4e;
-	--bs-danger: #d9534f;
-	--bs-light: #f8f9fa;
-	--bs-dark: #1b1b1b;
-	--bs-font-sans-serif: 'Montserrat', sans-serif;
-	--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-		'Liberation Mono', 'Courier New', monospace;
-	--bs-font-extended: 'Monument Extended', sans-serif;
-	--bs-gradient: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 0.15),
-		rgba(255, 255, 255, 0)
-	);
-}
-.input-group {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	width: 100%;
-}
-
-/* .btn-outline-success {
-	margin: 1rem;
-	color: var(--bs-dark);
-	border-color: var(--bs-dark);
-} */
-
 main {
 	background-color: var(--bs-background);
 	min-height: 80vh;
 }
+
+/* USER DEFINED CHANGES */
+@font-face {
+	font-family: 'Monument Extended';
+	src: url('https://srihanumantnursery.in/var/www/html/fonts/MonumentExtended.otf');
+}
+@font-face {
+	font-family: 'Zeichen';
+	src: url('https://srihanumantnursery.in/var/www/html/fonts/Zeichen.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Oswald&family=Raleway&family=Roboto&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+/* @import url('http://fonts.cdnfonts.com/css/monument-extended'); */
+:root {
+	--bs-primary: #3c5333;
+	--bs-primarylight: #3c533380;
+	--bs-background: #e5e5e5;
+	--bs-dark: #1b1b1b;
+	--bs-white: #ffff;
+	--bs-text: #30362e;
+	--bs-font-primary: 'Montserrat', sans-serif;
+	--bs-font-extended: 'Monument Extended', sans-serif;
+	--bs-font-cursive: 'Zeichen', cursive;
+	--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+		'Liberation Mono', 'Courier New', monospace;
+}
+
+.main-page-headline {
+	width: auto;
+	position: relative;
+	top: 2vw;
+	margin-top: 8vw;
+}
+@media screen and (max-width: 768px) {
+	.main-page-headline {
+		width: auto;
+		position: relative;
+		top: 0vw;
+		margin-top: 0;
+	}
+}
+.main-page-pic {
+	position: relative;
+	top: 20px;
+	left: 55px;
+}
+@media screen and (max-width: 600px) {
+	.main-page-pic {
+		position: relative;
+		top: 20px;
+		left: 0px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.main-page-pic {
+		position: relative;
+		top: 20px;
+		left: 0px;
+	}
+}
+.btn-outline-customprimary {
+	font-family: var(--bs-font-extended);
+	font-size: clamp(13px, 13px, 13px);
+	width: 180px;
+	height: 40px;
+	font-weight: lighter;
+	border-radius: 20px;
+	border-color: var(--bs-dark);
+	margin-top: 40px;
+	background-color: var(--bs-primary);
+	margin-right: 30px;
+	color: white;
+}
+.btn-outline-customsecondary {
+	border-radius: 20px;
+	width: 250px;
+
+	height: 40px;
+	font-size: clamp(13px, 13px, 13px);
+	font-family: var(--bs-font-extended);
+	border-color: var(--bs-dark);
+
+	margin-top: 20px;
+}
+.searchBox {
+	margin-right: 0;
+	width: fit-content;
+}
+.btn-primary-sappling {
+	margin: 0.5rem;
+	color: black;
+	border-color: black;
+}
+.form-control::placeholder {
+	color: var(--bs-dark);
+	opacity: 1;
+	font-family: var(--bs-font-primary);
+	font-size: 0.8rem;
+}
+
+.navbar {
+	background-color: var(--bs-background);
+	font-family: var(--bs-font-extended);
+	color: var(--bs-dark);
+	font-size: 0.8rem;
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+}
+@media only screen and (max-width: 1366px) and (min-width: 768px) {
+	.navbar-nav {
+		font-size: 0.6rem;
+	}
+
+	.searchBox {
+		margin-right: 0;
+		width: 35%;
+	}
+}
+t1 {
+	font-size: 1.8rem;
+	padding: 1rem 0;
+	font-family: var(--bs-font-extended);
+}
+t2 {
+	font-size: 30px;
+	padding: 1rem 0;
+	font-family: var(--bs-font-extended);
+}
+@media screen and (max-width: 600px) {
+	t2 {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 768px) {
+	t2 {
+		font-size: 19px;
+	}
+}
+
+t3 {
+	line-height: 3rem;
+	font-size: 160px;
+
+	margin-bottom: 90px;
+	color: var(--bs-primary);
+	font-family: var(--bs-font-cursive);
+}
+@media screen and (max-width: 600px) {
+	t3 {
+		font-size: 70px;
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 768px) {
+	t3 {
+		font-size: 86px;
+		margin-bottom: 40px;
+	}
+}
+t5 {
+	font-family: var(--bs-font-extended);
+	font-size: 13px;
+	padding: 1rem 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+	font-family: var(--bs-font-primary);
+	font-size: inherit;
+	line-height: inherit;
+}
+.form-control {
+	margin-top: 7px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 0.5rem 1.1rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #343a40;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/* ENDSHERE */
 i:hover {
 	color: #00fcb6;
 }
@@ -113,71 +263,27 @@ h2 {
 	}
 }
 
-.fa-seedling {
-	color: var(--bs-dark);
-}
 .btn-primary {
-	margin: 0.5rem;
 	color: #fff;
-	background-color: var(--bs-background);
-	border-color: var(--bs-background);
+	background-color: #15b3ac;
+	border-color: #15b3ac;
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: var(--bs-background);
-	border-color: var(--bs-background);
+	background-color: #179992;
+	border-color: #151515;
 }
+.section-1-main {
+	margin-bottom: 50px;
+}
+
 /* .jumbotron {
 	background-image: url('img/Jumbotron.jpg');
 	background-size: 100% 100%;
 	height: 100%;
 } */
-.land-main {
-	padding-left: 0;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 0;
-}
 .navbar {
-	background-color: var(--bs-background);
-	font-size: 0.8rem;
-	font-family: var(--bs-font-extended);
 	margin-bottom: 0px;
-	padding-bottom: 0%;
-	padding-top: 1%;
-	padding-right: 1%;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-	margin: 0;
-	font-family: var(--bs-font-sans-serif);
-	font-size: inherit;
-	line-height: inherit;
-}
-.nav-link {
-	margin-left: 0.5rem;
-	display: block;
-	padding: 0.5rem 1rem;
-	color: #4582ec;
-	text-decoration: none;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-		border-color 0.15s ease-in-out;
-}
-.responsive {
-	max-width: 100%;
-	height: auto;
-}
-.form-control::placeholder {
-	color: #868e96;
-	opacity: 1;
-	font-size: 0.62rem;
-}
-.searchBox {
-	margin-right: 0;
-	width: 30%;
 }
 .jumbotron {
 	padding-left: 30%;
@@ -238,12 +344,14 @@ img.hover-zoom {
 img.hover-zoom:hover {
 	transform: scale(1.25);
 }
-footer {
-	background-color: var(--bs-background);
-	font-size: 0.8rem;
+.navbar {
+	padding-bottom: 0%;
+	padding-top: 0%;
 }
+/*******************FOOTER CSS***************************************/
+/*
 .footer-bs {
-	background-color: var(--bs-background);
+	background-color: #3c3d41;
 	padding: 60px 40px;
 	color: rgba(255, 255, 255, 1);
 	margin-bottom: 20px;
@@ -346,3 +454,4 @@ footer {
 		border-left: solid 1px rgba(255, 255, 255, 0.1);
 	}
 }
+*/

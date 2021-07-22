@@ -17,6 +17,7 @@ const SearchBox = ({ history }) => {
 		<Form onSubmit={submitHandler} inLine>
 			<InputGroup>
 				<Form.Control
+					className='rcorner2'
 					type='text'
 					name='q'
 					onChange={(e) => setKeyword(e.target.value)}
@@ -30,7 +31,7 @@ const SearchBox = ({ history }) => {
 							type='submit'
 							variant='outline-success'
 							className='p-auto'
-							className='btn-primary'
+							className='btn-primary-sappling'
 						>
 							<i class='fas fa-seedling'></i>
 						</Button>

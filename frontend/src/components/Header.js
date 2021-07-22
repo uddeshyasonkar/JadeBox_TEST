@@ -46,7 +46,7 @@ const Header = () => {
 								<Nav.Link>Our Roots</Nav.Link>
 							</LinkContainer>
 							<LinkContainer to='/'>
-								<Nav.Link>Contact </Nav.Link>
+								<Nav.Link>Contact Us</Nav.Link>
 							</LinkContainer>
 						</Nav>
 						<Container className='searchBox'>
@@ -90,13 +90,13 @@ const Header = () => {
 							<LinkContainer to='/wishlist'>
 								<Nav.Link>
 									{' '}
-									<i className='fas fa-heart'></i>
+									<i className='fas fa-heart fa-lg'></i>
 								</Nav.Link>
 							</LinkContainer>
 							<LinkContainer to='/cart'>
 								<Nav.Link>
 									{' '}
-									<i className='fas fa-shopping-cart'></i>
+									<i className='fas fa-shopping-cart fa-lg'></i>
 								</Nav.Link>
 							</LinkContainer>
 
@@ -112,7 +112,7 @@ const Header = () => {
 							) : (
 								<LinkContainer to='/login'>
 									<Nav.Link>
-										<i className='fas fa-user'></i> Sign In
+										<i className='fas fa-user fa-lg'></i> Sign In
 									</Nav.Link>
 								</LinkContainer>
 							)}
